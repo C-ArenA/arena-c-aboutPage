@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Russo+One&family=Sarpanch&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -7,11 +9,132 @@ header {
     background-color: #0C0D02;
     height: 18vh;
     color: #F7F7F7;
+    display: flex;
 }
+.logoiso {
+    flex: 9;
+    text-align: left;
+    position: relative;
+    margin: auto;
+    margin-left: 2%;
+}
+.logo {
+    font-family: 'Russo One', sans-serif;
+    font-size: 5vh;
+}
+.logo span {
+    color: #CF5444;
+}
+.slogan {
+    font-family: 'Sarpanch', sans-serif;
+    font-size: 3vh;
+    letter-spacing: 0.9vh;
+}
+.title {
+    flex: 1;
+    text-align: right;
+    position: relative;
+    margin: auto;
+    margin-right: 1%;
+}
+h1 {
+    font-family: 'Sarpanch', sans-serif;
+    font-weight: normal;
+    font-size: 5vh;
+    letter-spacing: 2vh;
+}
+
 main {
     height: 82vh;
+    display: flex;
+}
+
+h2 {
+    font-family: 'Sarpanch', sans-serif;
+    font-weight: normal;
+    font-size: 2em;
+    color: white;
+    letter-spacing: 0.4em;
+    text-decoration: underline;
+    position: relative;
+    z-index: 1;
+}
+
+h2:before {
+    position: absolute;
+    top: 0.3em;
+    content: " ";
+    background-color: #0C0D02;
+    width: 0.9em;
+    height: 0.93em;
+    z-index: -1;
 }
 
 article{
+    position: relative;
     text-align: center;
+    flex: 1;
+    padding: 1.8vw;
+}
+article section {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 7vw;
+    padding-right: 7vw;
+    margin-left: -2.5vw;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.3em;
+}
+
+.mission {
+    background-color: #D9B53F;
+    color: #0C0D02;
+} 
+.mission h2 {
+    color: #0C0D02;
+    text-decoration-color: #29546B;
+}
+.mission h2 span {
+    color: #F7F7F7;
+}
+.mission h2:before {
+    background-color: #29546B;
+}
+.vision {
+    background-color: #29546B;
+}
+.vision h2 span {
+    position: relative;
+    left: 0.1em;
+} 
+.vision h2 {
+    color: #F7F7F7;
+    text-decoration-color: #D9B53F;
+}
+.vision h2 span {
+    color: #0C0D02;
+}
+.vision h2:before {
+    background-color: #D9B53F;
+}  
+.vision section {
+    color: #F7F7F7;
+} 
+.values {
+    background-color: #CF5444;
+}
+.values h2 {
+    text-decoration-color: #0C0D02;
+}
+.values h2 span {
+    position: relative;
+    left: 0.1em;
+}
+.values section {
+    font-size: 90%;
+}
+
+h3, h4{
+    color: #F7F7F7;
 }
