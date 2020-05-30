@@ -52,9 +52,9 @@ main {
 h2 {
     font-family: 'Sarpanch', sans-serif;
     font-weight: normal;
-    font-size: 2em;
+    font-size: 5vh;
     color: white;
-    letter-spacing: 0.4em;
+    letter-spacing: 2vh;
     text-decoration: underline;
     position: relative;
     z-index: 1;
@@ -62,7 +62,7 @@ h2 {
 
 h2:before {
     position: absolute;
-    top: 0.3em;
+    top: 1.4vh;
     content: " ";
     background-color: #0C0D02;
     width: 0.9em;
@@ -80,11 +80,11 @@ article section {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    padding-left: 7vw;
-    padding-right: 7vw;
+    padding-left: 6vw;
+    padding-right: 6vw;
     margin-left: -2.5vw;
     font-family: 'Roboto Mono', monospace;
-    font-size: 1.3em;
+    font-size: 3.4vh;
 }
 
 .mission {
@@ -132,9 +132,38 @@ article section {
     left: 0.1em;
 }
 .values section {
-    font-size: 90%;
+    font-size: 2vh;
 }
 
 h3, h4{
     color: #F7F7F7;
+}
+
+@media (max-width:800px) {
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    main {
+        display: unset;
+        height: auto;
+    }
+    article{
+        z-index: -1;
+        height: 82vh;
+        position: relative;
+        top: 18vh;
+        text-align: center;
+        padding: 1.8vw;
+    }
+    article section {
+        position: relative;
+        margin:auto;
+        top: 35vh;
+        padding-left: 6vw;
+        padding-right: 6vw;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 3.4vh;
+    }
+
 }
